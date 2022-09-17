@@ -1,0 +1,8 @@
+
+.mailIcon .tooltip {
+  display: none;
+}
+
+.mailIcon:hover .tooltip {
+  display: inline-block;
+}
