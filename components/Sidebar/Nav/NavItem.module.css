@@ -12,7 +12,7 @@
     color:black;
 }
 
-.navLink.active a {
+.navLink a.active {
     color: #2c98f0;
 }
 
@@ -34,7 +34,7 @@
     transform: scaleX(1); 
 }
 
-.navLink.active a:after{
+.navLink a.active:after{
     visibility: visible;
     transform: scaleX(1); 
 }

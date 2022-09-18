@@ -14,7 +14,7 @@ const SocialIcons = () => {
                 className={`relative cursor-pointer ${Style.mailIcon}`}
                 onClick={openMail}
             >
-                <AiOutlineMail size={25} color="blue" />
+                <AiOutlineMail size={25} color="gray" />
                 <div
                     className={`bg-black/50 text-sm z-20 text-white text-md rounded-md px-4 py-2 top-8 -left-8 absolute ${Style.tooltip}`}
                 >
@@ -36,7 +36,7 @@ const SocialIcons = () => {
                     rel="noreferrer noopener"
                     target="_blank"
                 >
-                    <AiFillGithub size={25} />
+                    <AiFillGithub size={25} color='gray' />
                 </a>
             </div>
         </div>

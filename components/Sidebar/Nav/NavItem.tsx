@@ -1,17 +1,17 @@
 import Style from './NavItem.module.css'
+import * as Scroll from 'react-scroll'
 
 type NavItemProp = {
     link: string,
     title: string,
-    active?: boolean
 }
 
-const NavItem = ({ link, title, active = false }: NavItemProp) => {
+const NavItem = ({ link, title }: NavItemProp) => {
     return (
-        <li className={`${Style.navLink} ${active ? Style.active : ''}`} >
-            <a href="#" data-nav-section={link}>
+        <li className={`${Style.navLink} cursor-pointer`} >
+            <Scroll.Link to={link} activeClass={Style.active} spy={true} smooth='true'>
                 {title}
-            </a>
+            </Scroll.Link>
         </li>
     )
 }
