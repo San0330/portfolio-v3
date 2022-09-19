@@ -1,17 +1,12 @@
 import Section from "./Section";
 import { Heading1, Heading2 } from "./UIs/Headings";
-import { validSectionTitle } from "../navItems";
 
 const Experiences = () => {
 
-    const sectionTitle: validSectionTitle = 'experiences'
-
     return (
-        <Section name={sectionTitle}>
-
-            <Heading1 title="Experiences" />
+        <Section name='experiences'>
+            <Heading1 title="Years of Experience" />
             <Heading2 title='Work Experiences' />
-
         </Section>
     )
 }

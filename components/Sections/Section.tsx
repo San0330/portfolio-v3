@@ -1,8 +1,9 @@
 import { ReactNode } from "react"
+import {validSectionTitle} from '../../types/types'
 
 type SectionProp = {
     children: ReactNode,
-    name: string,
+    name: validSectionTitle,
 }
 
 const Section = (props: SectionProp) => {

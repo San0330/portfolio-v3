@@ -1,4 +1,4 @@
-import navItemsTitles from "../../navItems";
+import { navItemsTitles } from "../../../data/navItems";
 import NavItem from "./NavItem";
 
 const Nav = () => {
