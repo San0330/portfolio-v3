@@ -9,7 +9,7 @@ type NavItemProp = {
 const NavItem = ({ link, title }: NavItemProp) => {
     return (
         <li className={`${Style.navLink} cursor-pointer`} >
-            <Scroll.Link to={link} activeClass={Style.active} spy={true} smooth='true'>
+            <Scroll.Link to={link} activeClass={Style.active} spy={true} smooth={true}>
                 {title}
             </Scroll.Link>
         </li>

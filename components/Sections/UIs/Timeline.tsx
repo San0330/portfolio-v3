@@ -18,7 +18,7 @@ const Timeline = ({ title, subTitle, color, dateRange, children }: TimelineProps
             </div>
             <div className={`relative flex flex-col gap-y-5 bg-gray-100 border shadow-lg text-gray-800 px-3 py-5 pb-10 rounded ${Style.Detail}`}>
                 <div>
-                    <h1 className='text-2xl text-gray-700 capitalize'>
+                    <h1 className='text-xl text-gray-700 capitalize'>
                         {title}
                     </h1>
                     <p className='text-gray-500'>{subTitle}<span className='ml-2'> ( {dateRange} )</span></p>

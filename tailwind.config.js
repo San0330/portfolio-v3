@@ -9,6 +9,7 @@ module.exports = {
             center: true,
         },
     extend: {
+ display: ["group-hover"],
       keyframes: {
         custom_ping: {
           "75%, 100%": { transform: 'scale(1.3)', opacity: '0' },
