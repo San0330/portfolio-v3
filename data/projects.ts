@@ -1,6 +1,7 @@
 import { Project } from '../types/types'
 
 export const projectCategories = [
+    'featured',
     'flutter',
     'php',
     'node',
@@ -16,7 +17,7 @@ export const projects: Project[] = [
         image: 'health-care-app.png',
         deployed_url: null,
         github_url: 'https://github.com/San0330/Health-Care-App#readme',
-        category: ['flutter'],
+        category: ['flutter', 'featured'],
         key_techs: ['Flutter', 'NodeJS', 'MongoDB'],
     },
     {
@@ -25,20 +26,21 @@ export const projects: Project[] = [
         image: 'code.jpeg',
         deployed_url: null,
         github_url: 'https://github.com/San0330/Cloud-Training#readme',
-        category: ['code'],
+        category: ['code', 'featured'],
         description: 'This project is a part of cloud apprentice program that uses various cloud technologies to build a mini demo project. ',
         key_techs: ['NodeJS', 'Cloud'],
     },
-    // {
-    //   name: 'Php custom framework',
-    //   description:
-    //     'This is an experimental project to understand how frameworks works, using concepts from various internet resources.',
-    //   image: 'php.png',
-    //   deployed_url: null,
-    //   github_url: 'https://github.com/San0330/Php-with-custom-framework',
-    //   category: ['php'],
-    //   key_techs: ['php', 'framework'],
-    // },
+    {
+        name: 'Php custom framework',
+        type: 'web',
+        description:
+            'This is an experimental project to understand how frameworks works, using concepts from various internet resources.',
+        image: 'php.png',
+        deployed_url: null,
+        github_url: 'https://github.com/San0330/Php-with-custom-framework',
+        category: ['php'],
+        key_techs: ['php', 'framework'],
+    },
     {
         name: 'MED KIT API',
         type: 'Backend',
@@ -57,27 +59,27 @@ export const projects: Project[] = [
         image: 'chat-app.png',
         deployed_url: null,
         github_url: 'https://github.com/San0330/Sandesh-chat-app#readme',
-        category: ['node'],
+        category: ['node', 'featured'],
         key_techs: ['ExpressJS', 'NodeJS', 'MongoDB', 'SocketIO', 'Typescript'],
     },
-    /* { */
-    /*     name: 'Algorithms', */
-    /*     type: 'Learning', */
-    /*     image: 'code.jpeg', */
-    /*     deployed_url: null, */
-    /*     github_url: 'https://github.com/San0330/algorithms', */
-    /*     category: ['code'], */
-    /*     description: 'Some popular CS algorithms written in python.', */
-    /*     key_techs: ['Python', 'Problem solving', 'Algorithms'], */
-    /* }, */
-    /* { */
-    /*     name: 'UVA Solutions', */
-    /*     type: 'Learning', */
-    /*     image: 'code.jpeg', */
-    /*     deployed_url: null, */
-    /*     github_url: 'https://github.com/San0330/UVA-Solutions', */
-    /*     category: ['code'], */
-    /*     description: 'Some programming problems from UVA platform solved using C++', */
-    /*     key_techs: ['C++', 'Problem solving', 'Algorithms'], */
-    /* }, */
+    {
+        name: 'Algorithms',
+        type: 'Learning',
+        image: 'code.jpeg',
+        deployed_url: null,
+        github_url: 'https://github.com/San0330/algorithms',
+        category: ['code'],
+        description: 'Some popular CS algorithms written in python.',
+        key_techs: ['Python', 'Problem solving', 'Algorithms'],
+    },
+    {
+        name: 'UVA Solutions',
+        type: 'Learning',
+        image: 'code.jpeg',
+        deployed_url: null,
+        github_url: 'https://github.com/San0330/UVA-Solutions',
+        category: ['code'],
+        description: 'Some programming problems from UVA platform solved using C++',
+        key_techs: ['C++', 'Problem solving', 'Algorithms'],
+    },
 ]

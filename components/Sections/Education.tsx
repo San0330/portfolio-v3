@@ -32,7 +32,7 @@ const EducationAccordion = () => {
 
                 <ul className="list-disc max-w-prose ml-8 space-y-4">
                     <li>
-                        Completed Bachelor's degree in Computer Science and Information Technology from Tribhuvan University, secured first division.
+                        Completed Bachelor&apos;s degree in Computer Science and Information Technology from Tribhuvan University, secured first division.
                     </li>
                     <li>
                         Participated in National as well as International Programming Competition representing college.
