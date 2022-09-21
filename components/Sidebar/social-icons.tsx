@@ -9,7 +9,7 @@ const SocialIcons = () => {
     const openMail = () => window.open(`mailto:${mail}`)
 
     return (
-        <div className="flex justify-around items-end w-full my-2">
+        <div className="flex justify-around items-end w-full my-4">
             <div
                 className={`relative cursor-pointer ${Style.mailIcon}`}
                 onClick={openMail}

@@ -27,7 +27,7 @@ type CategoryListsProps = {
 
 const CategoryLists = ({ selectedCategory, setSelectedCategory }: CategoryListsProps) => {
     return (
-        <div className='flex gap-5 mb-5'>
+        <div className='flex gap-8 mb-8'>
             {
                 projectCategories.map((category, idx) => {
                     return (

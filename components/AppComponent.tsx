@@ -1,4 +1,4 @@
-import { useState, createContext } from "react"
+import { useState, createContext, useEffect } from "react"
 import { Project } from "../types/types"
 import Sections from "./Sections"
 import ProjectDetail from "./Sections/ProjectDetail"
@@ -12,6 +12,7 @@ const AppComponent = () => {
     const [selectedProject, setSelectedProject] = useState<Project | null>(null)
 
     return (
+
         <SelectProjectContext.Provider value={setSelectedProject}>
             <Backdrop show={selectedProject != null} click={() => setSelectedProject(null)} />
             {selectedProject && <ProjectDetail project={selectedProject} />}

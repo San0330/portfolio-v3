@@ -7,9 +7,9 @@ export default function Document() {
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
             </Head>
 
-            <body >
+            <body>
                 <Main />
-                < NextScript />
+                <NextScript />
             </body>
         </Html>
     )

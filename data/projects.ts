@@ -10,6 +10,17 @@ export const projectCategories = [
 
 export const projects: Project[] = [
     {
+        name: 'Sandesh (chat app)',
+        type: 'Sockets',
+        description:
+            "A basic realtime chat application done to practise Typescript as well as socketIO. Uses express-session for authentication and mongoDB to store chats.",
+        image: 'chat-app.png',
+        deployed_url: null,
+        github_url: 'https://github.com/San0330/Sandesh-chat-app#readme',
+        category: ['node', 'featured'],
+        key_techs: ['ExpressJS', 'NodeJS', 'MongoDB', 'SocketIO', 'Typescript'],
+    },
+    {
         name: 'MED KIT',
         type: 'Mobile Application',
         description:
@@ -50,17 +61,6 @@ export const projects: Project[] = [
         github_url: 'https://github.com/San0330/Health-Care-API',
         category: ['node'],
         key_techs: ['Flutter', 'NodeJS', 'MongoDB'],
-    },
-    {
-        name: 'Sandesh (chat app)',
-        type: 'Sockets',
-        description:
-            "A basic realtime chat application done to practise Typescript as well as socketIO. Uses express-session for authentication and mongoDB to store chats.",
-        image: 'chat-app.png',
-        deployed_url: null,
-        github_url: 'https://github.com/San0330/Sandesh-chat-app#readme',
-        category: ['node', 'featured'],
-        key_techs: ['ExpressJS', 'NodeJS', 'MongoDB', 'SocketIO', 'Typescript'],
     },
     {
         name: 'Algorithms',
