@@ -3,7 +3,7 @@ import { projectCategories } from '../data/projects'
 
 export type validSectionTitle = typeof navItemsTitles[number]
 
-export type Category = typeof projectCategories[number] | 'all'
+export type Category = typeof projectCategories[number]
 
 export type Project = {
     name: string

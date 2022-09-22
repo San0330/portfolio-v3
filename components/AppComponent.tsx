@@ -1,7 +1,7 @@
-import { useState, createContext, useEffect } from "react"
+import { useState, createContext } from "react"
 import { Project } from "../types/types"
 import Sections from "./Sections"
-import ProjectDetail from "./Sections/ProjectDetail"
+import ProjectPopup from "./Sections/ProjectPopup"
 import Backdrop from "./Sections/UIs/Backdrop"
 import Sidebar from "./Sidebar"
 
@@ -12,10 +12,9 @@ const AppComponent = () => {
     const [selectedProject, setSelectedProject] = useState<Project | null>(null)
 
     return (
-
         <SelectProjectContext.Provider value={setSelectedProject}>
             <Backdrop show={selectedProject != null} click={() => setSelectedProject(null)} />
-            {selectedProject && <ProjectDetail project={selectedProject} />}
+            {selectedProject && <ProjectPopup project={selectedProject} click={() => setSelectedProject(null)} />}
             <Sidebar />
             <Sections />
         </SelectProjectContext.Provider>

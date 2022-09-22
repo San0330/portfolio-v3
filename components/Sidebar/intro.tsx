@@ -11,8 +11,16 @@ function Intro() {
                     className='absolute object-contain' />
             </div>
             <div className="text-center">
-                <h1 className='font-bold text-xl tracking-wide'><a href="#">Santosh Neupane</a></h1>
-                <span className="position"><a href="#">Software Engineer</a></span>
+                <h1 className='font-bold text-xl tracking-wide'>
+                    <a href="#">
+                        Santosh Neupane
+                   </a>
+                </h1>
+                <span className="position">
+                    <a href="#">
+                        Software Engineer
+                    </a>
+                </span>
             </div>
         </>
     )
