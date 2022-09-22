@@ -4,6 +4,10 @@
 }
 
 .Hamburger{
+    margin-left: 0rem;
+}
+
+.Hamburger.Opened{
     margin-left: 18rem;
 }
 

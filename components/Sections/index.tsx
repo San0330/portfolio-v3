@@ -6,12 +6,10 @@ import Projects from './Projects'
 import Achievements from './Achievements'
 import Blogs from './Blogs'
 import Style from './Sections.module.css'
-import { ReactNode } from 'react'
 
-const Sections = ({ children }: { children: ReactNode }) => {
+const Sections = () => {
     return (
-        <div className={`${Style.sections} relative px-5 md:px-10`}>
-            {children} {/*  drawer hamburger button  */}
+        <div className={`${Style.sections} px-5 md:px-10`}>
             <About />
             <Skills />
             <Experience />

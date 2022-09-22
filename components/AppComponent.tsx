@@ -31,19 +31,25 @@ const AppComponent = () => {
 
             {selectedProject && <ProjectPopup project={selectedProject} click={() => setSelectedProject(null)} />}
 
+            <HamburgerButton drawerState={drawerState} toggleDrawer={toggleDrawer} />
+
             <div className={`${containerStyle}`} >
                 <Sidebar />
-                <Sections>
-                    <HamburgerButton toggleDrawer={toggleDrawer} />
-                </Sections>
+                <Sections />
             </div>
         </SelectProjectContext.Provider>
     )
 }
 
-const HamburgerButton = ({ toggleDrawer }: { toggleDrawer: Function }) => {
+const HamburgerButton = ({ drawerState, toggleDrawer }: { drawerState: DrawerState, toggleDrawer: Function }) => {
+    let hamburgerStyle = Style.Hamburger;
+
+    if (drawerState == 'open') {
+        hamburgerStyle += ` ${Style.Opened}`
+    }
+
     return (
-        <button className={`${Style.Hamburger} block md:hidden fixed top-5 left-5 z-50`} onClick={() => toggleDrawer()} >
+        <button className={`${hamburgerStyle} block md:hidden fixed top-5 left-5 z-50`} onClick={() => toggleDrawer()} >
             <div className="h-[2px] w-6 mb-1 bg-gray-400"></div>
             <div className="h-[2px] w-6 mb-1 bg-gray-400"></div>
             <div className="h-[2px] w-6 mb-1 bg-gray-400"></div>
