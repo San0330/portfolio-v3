@@ -8,11 +8,10 @@ const Home: NextPage = () => {
             <Head>
                 <title>Santosh Neupane</title>
                 <meta name="description" content="Portfolio site of fullstack developer." />
-                <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <main className="w-full relative overflow-hidden">
-                    <AppComponent />
+                <AppComponent />
             </main>
 
         </div>

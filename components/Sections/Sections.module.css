@@ -1,9 +1,8 @@
 .sections {
     width: calc(100% - 18rem);
     margin-left: 18rem;
-    transition:0.5s;
+    transition: 0.5s;
 }
-
 
 @media screen and (max-width: 768px) {
     .sections {

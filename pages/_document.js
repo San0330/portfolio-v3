@@ -10,13 +10,13 @@ export default function Document() {
                 <link rel='icon' type='image/png' href='/favicon-16x16.png' sizes="16x16" />
 
                 <link rel='icon' type='image/png' href='/android-chrome-192x192.png' sizes="192x192" />
-                <link rel='icon' type='image/png' href='android-chrome-512x512.png' sizes="512x512" />
+                <link rel='icon' type='image/png' href='/android-chrome-512x512.png' sizes="512x512" />
 
-                <link rel='icon' type='image/png' href='apple-touch-icon.png' sizes="180x180" />
+                <link rel='icon' type='image/png' href='/apple-touch-icon.png' sizes="180x180" />
 
-                <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+                <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
-                <link rel="manifest" href="/manifest.json" />
+                <link rel="manifest" href="/site.webmanifest" />
             </Head>
 
             <body>

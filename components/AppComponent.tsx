@@ -6,9 +6,9 @@ import Backdrop from "./Sections/UIs/Backdrop"
 import Sidebar from "./Sidebar"
 import Style from './AppComponent.module.css'
 
-export const SelectProjectContext = createContext<Function | null>(null)
-
 type DrawerState = 'open' | 'close'
+
+export const SelectProjectContext = createContext<Function | null>(null)
 
 const AppComponent = () => {
 
@@ -21,25 +21,34 @@ const AppComponent = () => {
         containerStyle += Style.OffCanvas;
     }
 
+    const toggleDrawer = () => {
+        setDrawerState(prevState => prevState == 'open' ? 'close' : 'open')
+    }
+
     return (
         <SelectProjectContext.Provider value={setSelectedProject}>
             <Backdrop show={selectedProject != null} click={() => setSelectedProject(null)} />
-            {selectedProject && <ProjectPopup project={selectedProject} click={() => setSelectedProject(null)} />}
 
-            <button className='block md:hidden fixed top-5 left-5 z-50' onClick={() => setDrawerState(prevState => prevState == 'open' ? 'close': 'open')}>
-                <div className="h-[2px] w-6 mb-1 bg-gray-400"></div>
-                <div className="h-[2px] w-6 mb-1 bg-gray-400"></div>
-                <div className="h-[2px] w-6 mb-1 bg-gray-400"></div>
-            </button>
+            {selectedProject && <ProjectPopup project={selectedProject} click={() => setSelectedProject(null)} />}
 
             <div className={`${containerStyle}`} >
                 <Sidebar />
-                <Sections />
+                <Sections>
+                    <HamburgerButton toggleDrawer={toggleDrawer} />
+                </Sections>
             </div>
-
         </SelectProjectContext.Provider>
     )
 }
 
+const HamburgerButton = ({ toggleDrawer }: { toggleDrawer: Function }) => {
+    return (
+        <button className={`${Style.Hamburger} block md:hidden fixed top-5 left-5 z-50`} onClick={() => toggleDrawer()} >
+            <div className="h-[2px] w-6 mb-1 bg-gray-400"></div>
+            <div className="h-[2px] w-6 mb-1 bg-gray-400"></div>
+            <div className="h-[2px] w-6 mb-1 bg-gray-400"></div>
+        </button>
+    )
+}
 export default AppComponent
 

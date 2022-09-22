@@ -7,9 +7,9 @@ function Sidebar() {
 
         <aside className="pt-16 fixed overflow-y-scroll bg-gray-100 h-screen w-72">
             <Intro />
-            <SocialIcons/>
+            <SocialIcons />
             <hr className='border-t border-gray-300 my-5' />
-            <Nav/>
+            <Nav />
         </aside>
     )
 }

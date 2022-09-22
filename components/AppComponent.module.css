@@ -3,6 +3,10 @@
     margin:auto;
 }
 
+.Hamburger{
+    margin-left: 18rem;
+}
+
 @media screen and (max-width: 768px) {
     .Container.OffCanvas {
         transform: translateX(-18rem);

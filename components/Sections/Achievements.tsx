@@ -32,7 +32,7 @@ const AchievementsCarousels = () => {
     };
 
     return (
-        <div className='mt-20 px-2'>
+        <div className='mt-20 px-8'>
             <Slider {...settings}>
                 <Carousel image='/images/certs/problem_solving.png' />
                 <Carousel image='/images/certs/icpc.jpg' />
