@@ -12,9 +12,7 @@ const Home: NextPage = () => {
             </Head>
 
             <main className="w-full relative overflow-hidden">
-                <div className="container" style={{ maxWidth: '1170px' }}>
                     <AppComponent />
-                </div>
             </main>
 
         </div>

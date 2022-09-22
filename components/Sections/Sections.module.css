@@ -1,5 +1,12 @@
 .sections {
     width: calc(100% - 18rem);
-    margin-left:auto;
+    margin-left: 18rem;
     transition:0.5s;
+}
+
+
+@media screen and (max-width: 768px) {
+    .sections {
+        width: 100%;
+    }
 }

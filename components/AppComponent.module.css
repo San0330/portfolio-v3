@@ -1,0 +1,11 @@
+.Container{
+    max-width: 1170px;
+    margin:auto;
+}
+
+@media screen and (max-width: 768px) {
+    .Container.OffCanvas {
+        transform: translateX(-18rem);
+    }
+}
+
