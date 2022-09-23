@@ -19,7 +19,7 @@ const Achievements = () => {
 const AchievementsCarousels = () => {
 
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         fade: true,
@@ -32,7 +32,7 @@ const AchievementsCarousels = () => {
     };
 
     return (
-        <div className='mt-20 px-8'>
+        <div className='mt-10 md:mt-20 px-8'>
             <Slider {...settings}>
                 <Carousel image='/images/certs/problem_solving.png' />
                 <Carousel image='/images/certs/icpc.jpg' />

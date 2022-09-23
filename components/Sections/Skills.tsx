@@ -38,7 +38,7 @@ const Skills = () => {
 
 const SkillsList = ({ skills }: { skills: string[] }) => {
     return (
-        <div className='flex gap-8 flex-row flex-wrap mt-5'>
+        <div className='flex gap-4 md:gap-8 flex-row flex-wrap mt-5'>
             {
                 skills.map(skill => <SkillPill key={skill} title={skill} />)
             }

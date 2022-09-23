@@ -27,7 +27,7 @@ type CategoryListsProps = {
 
 const CategoryLists = ({ selectedCategory, setSelectedCategory }: CategoryListsProps) => {
     return (
-        <div className='flex gap-8 mb-8'>
+        <div className='flex gap-6 md:gap-8 mb-8 overflow-x-auto'>
             {
                 projectCategories.map((category, idx) => {
                     return (
@@ -106,7 +106,7 @@ const ProjectLists = ({ category }: { category: Category }) => {
                     {`Page ${page} of ${totalNumberOfPages}`}
                 </div>
             )}
-            <div className='grid grid-cols-2 gap-8'>
+            <div className='grid grid-cols-none lg:grid-cols-2 justify-center gap-4 lg:gap-8' >
                 {
                     projectsToShow.map((project, idx) =>
                         <ProjectBox key={idx} project={project} click={() => setSelectedProject?.(project)} />
@@ -176,7 +176,7 @@ type ProjectBoxProp = {
 
 const ProjectBox = ({ project, click }: ProjectBoxProp) => {
     return (
-        <div className="relative w-96 h-72 border border-gray-300 shadow-lg overflow-hidden rounded-md group">
+        <div className="relative w-80 h-72 xl:w-96 border border-gray-300 shadow-lg overflow-hidden rounded-md group">
 
             <Image
                 src={`/images/projects/${project.image}`}
@@ -184,7 +184,7 @@ const ProjectBox = ({ project, click }: ProjectBoxProp) => {
                 alt={`${project.name} image`}
                 className='absolute h-full w-full object-cover' />
 
-            <div className='relative group-hover:visible invisible bg-blue-500 text-white w-full h-full'>
+            <div className='relative group-hover:visible invisible bg-blue-500 text-white w-full h-full' >
 
                 <div className="absolute p-5 flex flex-col h-full">
                     <h3 className='font-semibold text-lg uppercase tracking-wider'>

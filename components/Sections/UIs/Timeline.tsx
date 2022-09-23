@@ -13,15 +13,15 @@ type TimelineProps = {
 const Timeline = ({ title, subTitle, color, dateRange, children }: TimelineProps) => {
     return (
         <div className="flex flex-row gap-x-10 min-w-11/12">
-            <div className={`${color} text-white h-10 w-10 shadow-lg rounded-full flex justify-center items-center z-20 leading-10`}>
+            <div className={`${color} text-white aspect-square h-10 min-width-[60px] shadow-lg rounded-full flex justify-center items-center z-20 leading-10`}>
                 <HiOutlineBriefcase />
             </div>
             <div className={`relative flex flex-col gap-y-5 bg-gray-100 border shadow-lg text-gray-800 px-3 py-5 pb-10 rounded ${Style.Detail}`}>
                 <div>
-                    <h1 className='text-xl text-gray-700 capitalize'>
+                    <h1 className='text-lg md:text-xl text-gray-700 capitalize'>
                         {title}
                     </h1>
-                    <p className='text-gray-500'>{subTitle}<span className='ml-2'> ( {dateRange} )</span></p>
+                    <p className='text-gray-500 text-sm md:text-base'>{subTitle}<span className='ml-2'> ( {dateRange} )</span></p>
                 </div>
 
                 {children}

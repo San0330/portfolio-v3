@@ -20,7 +20,7 @@ const ExperienceTimelines = () => {
             </div>
 
             <Timeline title="Software Developer" subTitle="Momayo Technology" color="bg-blue-400" dateRange="2021 - present" >
-                <ul className="list-disc max-w-prose ml-8 space-y-4">
+                <ul className="list-disc max-w-prose ml-8 space-y-4 text-sm md:text-base">
                     <li>Developed University EMIS for Lumbini Buddhist University</li>
                     <li>Used technologies like: Laravel, Tailwind, JS/Jquery, React etc</li>
                     <li>Worked on different modules like Account, Exam, PHD, Student etc</li>
@@ -29,7 +29,7 @@ const ExperienceTimelines = () => {
             </Timeline>
 
             <Timeline title="Internship" subTitle="Neutroline Pvt Ltd" color="bg-red-400" dateRange="2020 - 2021" >
-                <ul className="list-disc max-w-prose ml-8 space-y-4">
+                <ul className="list-disc max-w-prose ml-8 space-y-4 text-sm md:text-base">
                     <li>Completed Internship &amp; got opportunity for full time job.</li>
                     <li>Worked on Employee Management System.</li>
                     <li>Used technologies like: PHP, NodeJS, Google Cloud, Bootstrap etc.</li>

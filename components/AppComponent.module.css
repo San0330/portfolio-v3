@@ -1,19 +1,42 @@
 .Container{
     max-width: 1170px;
     margin:auto;
+    transition: 0.5s;
 }
 
 .Hamburger{
     margin-left: 0rem;
-}
-
-.Hamburger.Opened{
-    margin-left: 18rem;
+    transition: 0.5s;
 }
 
 @media screen and (max-width: 768px) {
     .Container.OffCanvas {
         transform: translateX(-18rem);
+    }
+
+    .Hamburger.Opened{
+        margin-left: 18rem;
+    }
+
+    .Hamburger.Opened div{
+        transform: rotate(45deg);
+    }
+
+    .Hamburger.Opened div:first-child{
+        margin: 0;
+        transition: 0.5s;
+    }
+
+    .Hamburger.Opened div:nth-child(2){
+        visibility:hidden;
+        margin: 0;
+    }
+
+    .Hamburger.Opened div:nth-child(3){
+        transform: rotate(-45deg);
+        margin: 0;
+        position:relative;
+        bottom: 0.25rem;
     }
 }
 

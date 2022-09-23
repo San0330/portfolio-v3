@@ -30,7 +30,7 @@ const EducationAccordion = () => {
                 activeAccordion={activeAccordion}
                 setActive={setActiveAccordion} >
 
-                <ul className="list-disc max-w-prose ml-8 space-y-4">
+                <ul className="list-disc text-sm md:text-base max-w-prose ml-8 space-y-4">
                     <li>
                         Completed Bachelor&apos;s degree in Computer Science and Information Technology from Tribhuvan University, secured first division.
                     </li>

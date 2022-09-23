@@ -30,7 +30,7 @@ const Accordion = ({ name, activeAccordion, setActive, children }: AccordionProp
                 className={`${headingstyle} rounded px-6 py-3 flex justify-between cursor-pointer`}
                 onClick={() => handleClick()}
             >
-                <div className='uppercase tracking-wider'>
+                <div className='uppercase text-sm md:text-md tracking-wider'>
                     {name}
                 </div>
 
@@ -38,7 +38,7 @@ const Accordion = ({ name, activeAccordion, setActive, children }: AccordionProp
                     {visible ? '-' : '+'}
                 </p>
             </div>
-            <div className={`${visible ? '' : 'hidden'} w-full bg-white text-gray-600 px-6 py-3 border border-gray-400 rounded mt-1`}>
+            <div className={`${visible ? '' : 'hidden'} w-full bg-white text-gray-600 px-6 py-3 border border-gray-400 rounded mt-1 text-sm md:text-base`}>
                 {children}
             </div>
         </div>
