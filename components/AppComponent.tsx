@@ -9,6 +9,7 @@ import Style from './AppComponent.module.css'
 type DrawerState = 'open' | 'close'
 
 export const SelectProjectContext = createContext<Function | null>(null)
+export const DrawerStateContext = createContext<Function | null>(null)
 
 const AppComponent = () => {
 
@@ -27,17 +28,19 @@ const AppComponent = () => {
 
     return (
         <SelectProjectContext.Provider value={setSelectedProject}>
-            <Backdrop show={selectedProject != null} click={() => setSelectedProject(null)} />
+            <DrawerStateContext.Provider value={toggleDrawer}>
+                <Backdrop show={selectedProject != null} click={() => setSelectedProject(null)} />
 
-            {selectedProject && <ProjectPopup project={selectedProject} click={() => setSelectedProject(null)} />}
+                {selectedProject && <ProjectPopup project={selectedProject} click={() => setSelectedProject(null)} />}
 
-            <HamburgerButton drawerState={drawerState} toggleDrawer={toggleDrawer} />
+                <HamburgerButton drawerState={drawerState} toggleDrawer={toggleDrawer} />
 
-            <div className={`${containerStyle}`} >
-                <Sidebar />
-                <Sections />
-            </div>
-        </SelectProjectContext.Provider>
+                <div className={`${containerStyle}`} >
+                    <Sidebar />
+                    <Sections />
+                </div>
+            </DrawerStateContext.Provider>
+        </SelectProjectContext.Provider >
     )
 }
 

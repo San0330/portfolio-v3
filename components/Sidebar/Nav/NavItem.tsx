@@ -1,5 +1,7 @@
 import Style from './NavItem.module.css'
 import * as Scroll from 'react-scroll'
+import { useContext } from 'react'
+import { DrawerStateContext } from '../../AppComponent'
 
 type NavItemProp = {
     link: string,
@@ -7,12 +9,20 @@ type NavItemProp = {
 }
 
 const NavItem = ({ link, title }: NavItemProp) => {
+
+    const toggleDrawer = useContext(DrawerStateContext)
+
     return (
         <li className={`${Style.navLink} cursor-pointer`} >
-            <Scroll.Link to={link} activeClass={Style.active} spy={true} smooth={true}>
+            <Scroll.Link
+                to={link}
+                activeClass={Style.active}
+                spy={true}
+                smooth={true}
+                onClick={() => toggleDrawer?.()}>
                 {title}
             </Scroll.Link>
-        </li>
+        </li >
     )
 }
 

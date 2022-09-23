@@ -4,7 +4,6 @@ import SocialIcons from "./social-icons"
 
 function Sidebar() {
     return (
-
         <aside className="pt-16 fixed overflow-y-scroll bg-gray-100 h-screen w-72">
             <Intro />
             <SocialIcons />

@@ -1,12 +1,12 @@
 .Container{
     max-width: 1170px;
     margin:auto;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .Hamburger{
     margin-left: 0rem;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 @media screen and (max-width: 768px) {
@@ -19,17 +19,18 @@
     }
 
     .Hamburger.Opened div{
-        transform: rotate(45deg);
+        transition: 0.5s;
     }
 
     .Hamburger.Opened div:first-child{
+        transform: rotate(45deg);
         margin: 0;
-        transition: 0.5s;
     }
 
     .Hamburger.Opened div:nth-child(2){
         visibility:hidden;
         margin: 0;
+        transition:0s
     }
 
     .Hamburger.Opened div:nth-child(3){
