@@ -27,7 +27,7 @@ const Accordion = ({ name, activeAccordion, setActive, children }: AccordionProp
     return (
         <div className='mt-5'>
             <div
-                className={`${headingstyle} rounded px-6 py-3 flex justify-between cursor-pointer`}
+                className={`${headingstyle} transition-colors duration-500 rounded px-6 py-3 flex justify-between cursor-pointer`}
                 onClick={() => handleClick()}
             >
                 <div className='uppercase text-sm md:text-md tracking-wider'>
@@ -38,7 +38,7 @@ const Accordion = ({ name, activeAccordion, setActive, children }: AccordionProp
                     {visible ? '-' : '+'}
                 </p>
             </div>
-            <div className={`${visible ? '' : 'hidden'} w-full bg-white text-gray-600 px-6 py-3 border border-gray-400 rounded mt-1 text-sm md:text-base`}>
+            <div className={`${visible ? 'opacity-100 h-auto py-3 ' : 'opacity-0 h-px py-0 '} transition-all overflow-hidden duration-500 w-full bg-white text-gray-600 px-6  border border-gray-400 rounded mt-1 text-sm md:text-base`}>
                 {children}
             </div>
         </div>

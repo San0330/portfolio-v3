@@ -1,12 +1,11 @@
 .Container{
     max-width: 1170px;
-    margin:auto;
-    transition: 0.2s;
+    transition: transform 0.2s ease-in-out 0.1s; 
 }
 
 .Hamburger{
     margin-left: 0rem;
-    transition: 0.2s;
+    transition: 0.2s ease-in-out 0.1s;
 }
 
 @media screen and (max-width: 768px) {
@@ -15,27 +14,24 @@
     }
 
     .Hamburger.Opened{
-        margin-left: 18rem;
+        transform: translateX(18rem);
     }
 
     .Hamburger.Opened div{
-        transition: 0.5s;
+        margin: 0;
+        transition: rotate 0.5s linear;
     }
 
     .Hamburger.Opened div:first-child{
         transform: rotate(45deg);
-        margin: 0;
     }
 
     .Hamburger.Opened div:nth-child(2){
         visibility:hidden;
-        margin: 0;
-        transition:0s
     }
 
     .Hamburger.Opened div:nth-child(3){
         transform: rotate(-45deg);
-        margin: 0;
         position:relative;
         bottom: 0.25rem;
     }

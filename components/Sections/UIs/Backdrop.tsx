@@ -15,7 +15,7 @@ const Backdrop = ({ show = false, click }: BackdropProp) => {
 
     return (
         <div
-            className={`${isVisible ? '' : 'invisible'} z-40 absolute top-0 left-0 w-full h-full bg-black/30`}
+            className={`${isVisible ? 'opacity-100 h-full w-full ' : 'opacity-0 h-0 w-0 '} transition-all duration-200 z-40 absolute inset-0 w-full h-full bg-black/30`}
             onClick={() => click()}
         >
         </div>

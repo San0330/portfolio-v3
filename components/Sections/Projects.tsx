@@ -184,7 +184,7 @@ const ProjectBox = ({ project, click }: ProjectBoxProp) => {
                 alt={`${project.name} image`}
                 className='absolute h-full w-full object-cover' />
 
-            <div className='relative group-hover:visible invisible bg-blue-500 text-white w-full h-full' >
+            <div className='relative group-hover:opacity-100 opacity-0 duration-200 bg-blue-500 hover:transition-opacity text-white w-full h-full' >
 
                 <div className="absolute p-5 flex flex-col h-full">
                     <h3 className='font-semibold text-lg uppercase tracking-wider'>

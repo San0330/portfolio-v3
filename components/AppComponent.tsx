@@ -31,7 +31,7 @@ const AppComponent = () => {
             <DrawerStateContext.Provider value={toggleDrawer}>
                 <Backdrop show={selectedProject != null} click={() => setSelectedProject(null)} />
 
-                {selectedProject && <ProjectPopup project={selectedProject} click={() => setSelectedProject(null)} />}
+                <ProjectPopup project={selectedProject} click={() => setSelectedProject(null)} />
 
                 <HamburgerButton drawerState={drawerState} toggleDrawer={toggleDrawer} />
 
