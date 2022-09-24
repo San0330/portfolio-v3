@@ -1,5 +1,6 @@
 .Container{
     max-width: 1170px;
+    margin:auto;
     transition: transform 0.2s ease-in-out 0.1s; 
 }
 
