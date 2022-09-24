@@ -15,6 +15,7 @@ const NavItem = ({ link, title }: NavItemProp) => {
     return (
         <li className={`${Style.navLink} cursor-pointer`} >
             <Scroll.Link
+                offset={-280}
                 to={link}
                 activeClass={Style.active}
                 spy={true}
