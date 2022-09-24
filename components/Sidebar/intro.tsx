@@ -10,7 +10,7 @@ function Intro() {
                     alt='Santosh Neupane Image'
                     className='absolute object-fill aspect-square' />
             </div>
-            <div className="text-center">
+            <div className="md:text-center">
                 <h1 className='font-bold text-base md:text-xl tracking-wide'>
                     <a href="#">
                         Santosh Neupane
