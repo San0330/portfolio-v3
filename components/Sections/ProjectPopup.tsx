@@ -18,7 +18,7 @@ const ProjectPopup = ({ project, click }: ProjectPopupProp) => {
                 {project?.name}
             </h1>
 
-            <p className='max-w-prose max-h-36 text-justify leading-8 overflow-y-auto'>
+            <p className='max-w-prose max-h-36 leading-8 overflow-y-auto'>
                 {project?.description}
             </p>
 

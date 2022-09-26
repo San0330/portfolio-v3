@@ -27,9 +27,9 @@ const Section = (props: SectionProp) => {
     }, [])
 
     return (
-        <div ref={sectionRef} id={props.name} className={`${sectionEntered ? 'opacity-100' : 'opacity-10'} transition-opacity duration-700 pt-16 min-h-screen w-full`}>
+        <section ref={sectionRef} id={props.name} className={`${sectionEntered ? 'opacity-100' : 'opacity-10'} transition-opacity duration-700 pt-16 min-h-screen w-full`}>
             {props.children}
-        </div>
+        </section>
     )
 }
 

@@ -195,9 +195,9 @@ const ProjectBox = ({ project, click }: ProjectBoxProp) => {
                         {project.type}
                     </p>
 
-                    <p className='max-w-prose mt-5 leading-8 text-justify'>
-                        {project.description.substring(0, 108)}
-                        {project.description.length > 100 ? '...' : ''}
+                    <p className='max-w-prose mt-5 leading-8'>
+                        {project.description.substring(0, 128)}
+                        {project.description.length > 128 ? '...' : ''}
                     </p>
 
                     <div className='mt-auto flex gap-5'>
