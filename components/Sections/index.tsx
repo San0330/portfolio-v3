@@ -5,7 +5,7 @@ import Skills from './Skills'
 import Projects from './Projects'
 import Achievements from './Achievements'
 import Blogs from './Blogs'
-import Style from './Sections.module.css'
+import Style from './Sections.module.scss'
 
 const Sections = () => {
     return (
