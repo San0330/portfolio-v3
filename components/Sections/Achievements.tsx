@@ -34,6 +34,7 @@ const AchievementsCarousels = () => {
     return (
         <div className='mt-10 md:mt-20 px-8'>
             <Slider {...settings}>
+                <Carousel image='/images/certs/crl.png' />
                 <Carousel image='/images/certs/problem_solving.png' />
                 <Carousel image='/images/certs/icpc.jpg' />
                 <Carousel image='/images/certs/flutter.jpg' />
