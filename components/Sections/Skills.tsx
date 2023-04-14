@@ -5,7 +5,7 @@ import { Heading1, Heading2 } from "./UIs/Headings";
 
 const Skills = () => {
 
-    const skills = ['NestJS', 'ReactJS/NextJS', 'Laravel', 'Git', 'Javascript/Typescript', 'PHP', 'Tailwind CSS', 'My SQL']
+    const skills = ['NestJS', 'ReactJS/NextJS', 'Git', 'Javascript/Typescript', 'PHP/Laravel', 'Tailwind CSS', 'My SQL']
 
     const familiarSkills = ['MongoDB', 'Docker', 'Vim', 'Linux', 'Flutter']
 

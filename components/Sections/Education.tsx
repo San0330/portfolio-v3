@@ -17,8 +17,8 @@ const Education = () => {
 const EducationAccordion = () => {
 
     const degrees = [
-        'Bachelor Degree, CSIT (2016 - 2021)',
-        'Higher Secondary, Science (2014 - 2016)'
+        'Master Degree, IT (2023 - Present)',    
+        'Bachelor Degree, CSIT (2016 - 2021)',        
     ]
 
     const [activeAccordion, setActiveAccordion] = useState(degrees[0])
@@ -30,6 +30,19 @@ const EducationAccordion = () => {
                 activeAccordion={activeAccordion}
                 setActive={setActiveAccordion} >
 
+                <ul className="list-disc max-w-prose ml-8 space-y-4">
+                    <li>
+                        Recently started.
+                    </li>                    
+                </ul>
+              
+            </Accordion>
+
+            <Accordion
+                name={degrees[1]}
+                activeAccordion={activeAccordion}
+                setActive={setActiveAccordion} >               
+
                 <ul className="list-disc text-sm md:text-base max-w-prose ml-8 space-y-4">
                     <li>
                         Completed Bachelor&apos;s degree in Computer Science and Information Technology from Tribhuvan University, secured 1<span className='align-super'>st</span> division.
@@ -39,21 +52,6 @@ const EducationAccordion = () => {
                     </li>
                 </ul>
 
-            </Accordion>
-
-            <Accordion
-                name={degrees[1]}
-                activeAccordion={activeAccordion}
-                setActive={setActiveAccordion} >
-
-                <ul className="list-disc max-w-prose ml-8 space-y-4">
-                    <li>
-                        Completed college, +2 Science with major in Maths.
-                    </li>
-                    <li>
-                        Secured 1<span className='align-super'>st</span> division in HSEB Exam.
-                    </li>
-                </ul>
 
             </Accordion>
         </div>
