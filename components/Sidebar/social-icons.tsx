@@ -11,7 +11,7 @@ const SocialIcons = () => {
 
     return (
         <div>
-            <a className={`flex mx-auto ${Style.libutton}`} href={linkedFollowLink} target="_blank">Follow</a>
+            <a className={`flex mx-auto ${Style.libutton}`} href={linkedFollowLink} rel="noreferrer noopener" target="_blank">Follow</a>
             <div className="flex justify-around items-end w-full my-4">
                 <div
                     className={`relative cursor-pointer ${Style.mailIcon}`}
