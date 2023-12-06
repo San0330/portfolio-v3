@@ -4,7 +4,7 @@ import Style from './social-icons.module.css'
 const SocialIcons = () => {
     const linkedInLink = 'https://www.linkedin.com/in/santosh-neupane-0330/'
     const githubLink = 'https://github.com/San0330'
-    const mail = 'santosh.neupane.0330@gmail.com'
+    const mail = 'me@santosh-neupane.com.np'
     const linkedFollowLink = 'https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=santosh-neupane-0330'
 
     const openMail = () => window.open(`mailto:${mail}`)
