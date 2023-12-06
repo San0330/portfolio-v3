@@ -19,7 +19,7 @@ const SocialIcons = () => {
                 >
                     <AiOutlineMail size={25} color="gray" />
                     <div
-                        className={`bg-black/50 text-sm z-20 text-white text-md rounded-md px-4 py-2 top-8 -left-8 absolute ${Style.tooltip}`}
+                        className={`bg-black/50 text-sm z-20 text-white text-md rounded-md px-4 py-2 top-8 -left-8 absolute whitespace-nowrap ${Style.tooltip}`}
                     >
                         {mail}
                     </div>
