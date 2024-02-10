@@ -32,8 +32,11 @@ const EducationAccordion = () => {
 
                 <ul className="list-disc max-w-prose ml-8 space-y-4">
                     <li>
-                        Recently started.
-                    </li>                    
+                        Studying & conducting research on latest algorithms for thesis.
+                    </li>
+                    <li>
+                        Learning to read & understand published papers.
+                    </li>
                 </ul>
               
             </Accordion>
