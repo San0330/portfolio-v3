@@ -41,8 +41,8 @@ const AchievementsCarousels = () => {
                 <Carousel image='/images/certs/fundamental_analysis.png' />
                 <Carousel image='/images/certs/python.png' />
                 <Carousel image='/images/certs/web_certificate.jpg' />
-                <Carousel image='/images/certs/pokhara_prog_contest.jpg' />
-                <Carousel image='/images/certs/hackathon.jpg' />
+                {/* <Carousel image='/images/certs/pokhara_prog_contest.jpg' /> */}
+                {/* <Carousel image='/images/certs/hackathon.jpg' /> */}
                 <Carousel image='/images/certs/nepali_samaj.jpg' />
             </Slider>
         </div>
