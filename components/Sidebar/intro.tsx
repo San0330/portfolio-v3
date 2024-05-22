@@ -5,7 +5,7 @@ function Intro() {
         <div className='flex flex-row md:flex-col px-8 items-center gap-x-5 mb-6'>
             <div className="w-16 h-16 md:w-36 md:h-36 relative overflow-hidden ring-1 hover:ring-2 ring-gray-300 md:mb-5 rounded-full border-5 border-red-500 md:mx-auto">
                 <Image
-                    src="/images/me.jpg"
+                    src="/images/me2.jpeg"
                     layout="fill"
                     alt='Santosh Neupane Image'
                     className='absolute object-fill aspect-square' />
