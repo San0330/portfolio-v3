@@ -6,9 +6,21 @@ export const projectCategories = [
     'php',
     'node',
     'code',
+    'research'
 ] as const;
 
 export const projects: Project[] = [
+    {
+        name: 'CNN variants for Fake News classification',
+        type: 'Learning',
+        description:
+            "This is a research seminar paper of 2nd semester, Masters in IT (MIT) on topic 'Comparative Analysis of CNN Variants for Fake News Classification' ",
+        image: 'cnn-fake-news-research.png',
+        deployed_url: "",
+        github_url: 'https://github.com/San0330/CNN-for-Fake-News-Seminar/tree/main',
+        category: ['research', 'featured'],
+        key_techs: ['Python', 'Tensorflow', 'Research'],
+    },
     {
         name: 'Sandesh (chat app)',
         type: 'Sockets',

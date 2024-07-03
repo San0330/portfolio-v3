@@ -23,7 +23,7 @@ const ExperienceTimelines = () => {
                 <ul className="list-disc max-w-prose ml-8 space-y-4 text-sm md:text-base">
                     <li>Developed EMIS application with various modules for both university staffs and students</li>
                     <li>Collaborated with clients to define software requirements</li>
-                    <li>Participated in architecture, design and implementation of back-end features using Laravel, Jquery etc</li>
+                    <li>Participated in architecture, design and implementation of back-end features using Laravel, Jquery, React etc</li>
                     <li>Improved response time of application using SQL optimization technique, caching etc when generating summary reports</li>
                 </ul>
             </Timeline>

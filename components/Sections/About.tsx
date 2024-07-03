@@ -12,7 +12,7 @@ const About = () => {
             <Heading2 title='About Me' />
 
             <IntroParagraph>
-                <strong>Hi, my name is Santosh</strong>, I specialize in Full-stack development. Some interesting hobbies of mine are Cloud technologies and App Development. I am always ready to dive into the depth of the Technical world.
+                <strong>Hi, my name is Santosh</strong>, I specialize in Full-stack development. Some interesting hobbies of mine are Cloud technologies, App Development & Research. I am always ready to dive into the depth of the Technical world.
             </IntroParagraph>
 
             <IntroParagraph>

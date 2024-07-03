@@ -7,7 +7,7 @@ const Skills = () => {
 
     const skills = ['NestJS', 'ReactJS/NextJS', 'Git', 'Javascript/Typescript', 'PHP/Laravel', 'Tailwind CSS', 'My SQL']
 
-    const familiarSkills = ['MongoDB', 'Docker', 'Vim', 'Linux', 'Flutter']
+    const familiarSkills = ['MongoDB', 'Docker', 'Vim', 'Linux', 'Flutter', 'Python', 'Tensorflow']
 
     return (
         <Section name='skills'>
