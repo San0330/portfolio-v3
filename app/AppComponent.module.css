@@ -1,0 +1,41 @@
+.Container{
+    max-width: 1170px;
+    margin:auto;
+    transition: transform 0.2s ease-in-out 0.1s; 
+}
+
+.Hamburger{
+    margin-left: 0rem;
+    transition: 0.2s ease-in-out 0.1s;
+    -webkit-tap-highlight-color:transparent;
+}
+
+@media screen and (max-width: 767px) {
+    .Container.OffCanvas {
+        transform: translateX(-18rem);
+    }
+
+    .Hamburger.Opened{
+        transform: translateX(18rem);
+    }
+
+    .Hamburger.Opened div{
+        margin: 0;
+        transition: rotate 0.5s linear;
+    }
+
+    .Hamburger.Opened div:first-child{
+        transform: rotate(45deg);
+    }
+
+    .Hamburger.Opened div:nth-child(2){
+        visibility:hidden;
+    }
+
+    .Hamburger.Opened div:nth-child(3){
+        transform: rotate(-45deg);
+        position:relative;
+        bottom: 0.25rem;
+    }
+}
+
