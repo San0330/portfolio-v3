@@ -32,7 +32,7 @@ export default function AppComponent() {
   return (
       <SelectProjectContext.Provider value={setSelectedProject}>
           <DrawerStateContext.Provider value={toggleDrawer}>
-              {/* <Backdrop show={selectedProject != null} click={() => setSelectedProject(null)} />               */}
+              <Backdrop show={selectedProject != null} click={() => setSelectedProject(null)} />              
                 
               <ProjectPopup project={selectedProject} click={() => setSelectedProject(null)} />
 
