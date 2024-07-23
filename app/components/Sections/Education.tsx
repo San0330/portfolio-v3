@@ -37,6 +37,9 @@ const EducationAccordion = () => {
                     <li>
                         Learning to read & understand published papers.
                     </li>
+                    <li>
+                        Second semester seminar paper on <strong>Hybrid CNN-LSTM for fake news</strong>, available link on projects section.
+                    </li>
                 </ul>
               
             </Accordion>

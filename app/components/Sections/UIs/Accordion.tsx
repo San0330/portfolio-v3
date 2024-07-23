@@ -23,7 +23,7 @@ const Accordion = ({ name, activeAccordion, setActive, children }: AccordionProp
     }
 
     // let headingstyle = visible ? 'bg-blue-400 text-white' : 'bg-gray-300 text-gray-700'
-    let headingstyle = true ? 'bg-blue-400 text-white' : 'bg-gray-300 text-gray-700'
+    let headingstyle = true ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700'
 
 
     return (
