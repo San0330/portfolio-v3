@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react"
-
 type BackdropProp = {
     show?: boolean,
     click: Function

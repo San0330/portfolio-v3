@@ -5,7 +5,7 @@ import Sidebar from "./components/Sidebar";
 import { useState, createContext } from "react"
 
 import Style from './AppComponent.module.css'
-import { Project } from "./types/types";
+import { ArticleItem, Project } from "./types/types";
 import Backdrop from "./components/Sections/UIs/Backdrop";
 import ProjectPopup from "./components/Sections/ProjectPopup";
 
@@ -13,38 +13,45 @@ type DrawerState = 'open' | 'close'
 
 export const SelectProjectContext = createContext<Function | null>(null)
 export const DrawerStateContext = createContext<Function | null>(null)
+export const ArticlesContext = createContext<Record<string, ArticleItem[]> | null>(null)
 
-export default function AppComponent() {
+type AppComponentProp = {
+    articles: Record<string, ArticleItem[]>
+}
 
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null)
-  const [drawerState, setDrawerState] = useState<DrawerState>('close')
+export default function AppComponent({ articles }: AppComponentProp) {
 
-  let containerStyle = Style.Container + ' '
+    const [selectedProject, setSelectedProject] = useState<Project | null>(null)
+    const [drawerState, setDrawerState] = useState<DrawerState>('close')
 
-  if (drawerState == 'close') {
-      containerStyle += Style.OffCanvas;
-  }
+    let containerStyle = Style.Container + ' '
 
-  const toggleDrawer = () => {
-      setDrawerState(prevState => prevState == 'open' ? 'close' : 'open')
-  }
+    if (drawerState == 'close') {
+        containerStyle += Style.OffCanvas;
+    }
 
-  return (
-      <SelectProjectContext.Provider value={setSelectedProject}>
-          <DrawerStateContext.Provider value={toggleDrawer}>
-              <Backdrop show={selectedProject != null} click={() => setSelectedProject(null)} />              
-                
-              <ProjectPopup project={selectedProject} click={() => setSelectedProject(null)} />
+    const toggleDrawer = () => {
+        setDrawerState(prevState => prevState == 'open' ? 'close' : 'open')
+    }
 
-              <HamburgerButton drawerState={drawerState} toggleDrawer={toggleDrawer} />
+    return (
+        <SelectProjectContext.Provider value={setSelectedProject}>
+            <DrawerStateContext.Provider value={toggleDrawer}>
+                <ArticlesContext.Provider value={articles}>
+                    <Backdrop show={selectedProject != null} click={() => setSelectedProject(null)} />
 
-              <div className={`${containerStyle}`} >
-                  <Sidebar />
-                  <Sections />
-              </div>
-          </DrawerStateContext.Provider>
-      </SelectProjectContext.Provider >
-  )
+                    <ProjectPopup project={selectedProject} click={() => setSelectedProject(null)} />
+
+                    <HamburgerButton drawerState={drawerState} toggleDrawer={toggleDrawer} />
+
+                    <div className={`${containerStyle}`} >
+                        <Sidebar />
+                        <Sections />
+                    </div>
+                </ArticlesContext.Provider>
+            </DrawerStateContext.Provider>
+        </SelectProjectContext.Provider >
+    )
 }
 
 const HamburgerButton = ({ drawerState, toggleDrawer }: { drawerState: DrawerState, toggleDrawer: Function }) => {
