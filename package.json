@@ -21,6 +21,7 @@
     "remark-html": "^16.0.1",
     "sass": "^1.77.8",
     "server-only": "^0.0.1",
+    "sharp": "^0.33.4",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
