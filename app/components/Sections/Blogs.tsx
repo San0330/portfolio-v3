@@ -9,7 +9,7 @@ const Blogs = () => {
             <Heading2 title='Blogs' />
             <section className=" flex flex-col gap-10">
                 <p className="block text-gray-400 text-2xl">Coming Soon!</p>
-                <p className="block text-gray-400">Demo implentation on "blog" branch of github repository</p>
+                <p className="block text-gray-400">Demo implentation on (blog) branch of github repository</p>
             </section>
         </Section>
     )
